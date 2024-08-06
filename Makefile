@@ -1,6 +1,6 @@
 CC=cc
 DEBUG=-g -fsanitize=address
-CFLAGS=-Wall -Werror -Wextra -O2 -pedantic -std=c99
+CFLAGS=-Wall -Werror -Wextra -pedantic -std=c99
 LFLAGS=-lncurses
 OUT_DIR=./bin
 
@@ -11,10 +11,10 @@ SNAKE=./src/snake/snake.c
 all: main
 
 main:
-	$(CC) $(CFLAGS) $(MAIN) $(FOOD) $(SNAKE) -o $(OUT_DIR)/snake_game.out $(LFLAGS)
+	$(CC) $(CFLAGS) -O2 $(MAIN) $(FOOD) $(SNAKE) -o $(OUT_DIR)/snake_game.out $(LFLAGS)
 
 test:
-	$(CC) $(CFLAGS) $(DEBUG) $(MAIN) $(FOOD) $(SNAKE) -o $(OUT_DIR)/test.out $(LFLAGS)
+	$(CC) $(CFLAGS) $(DEBUG) -O0 $(MAIN) $(FOOD) $(SNAKE) -o $(OUT_DIR)/test.out $(LFLAGS)
 	@./bin/test.out
 
 clean:
