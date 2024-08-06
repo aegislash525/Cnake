@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/std-C99-black" />
     <img src="https://img.shields.io/badge/build%20from%20soruce%20in%20order%20to%20play-:)-red" />
     <img src="https://img.shields.io/badge/license-MIT-green" />
-    <p>Simple snake game to play in your termial. <br />Written in C.</p>
+    <p>Simple snake game to play in your termial. <br />Use arrows to control the snake.</p>
   </div>
 </div>
 
